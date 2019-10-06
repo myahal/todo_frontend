@@ -1,0 +1,12 @@
+version: '3'
+services:
+    front:
+        build: .
+        container_name: "front-container"
+        ports:
+            - "5300:3000"
+        privileged: true
+        volumes:
+            - ./front:/app
+        tty: true
+
