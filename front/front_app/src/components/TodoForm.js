@@ -32,29 +32,29 @@ const TodoForm = (props)  => {
 
     return(
         <>
-            <h4>登録</h4>
+            <h4>Register</h4>
             <form>
                 <div className="form-group">
-                    <label htmlFor="formName">名前</label>
+                    <label htmlFor="formName">Name</label>
                     <input type="text" className="form-control" id="formName" {...name} />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="formContents">内容</label>
+                    <label htmlFor="formContents">Contents</label>
                     <input type="text" className="form-control" id="formContents" {...contents}/>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="formDeadline">締め切り</label>
+                    <label htmlFor="formDeadline">Deadline</label>
                     <DateSelector getPropsFromChild={getDeadline} current={deadline} />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="formPriority">優先度</label>
+                    <label htmlFor="formPriority">Priority</label>
                     <input type="text" className="form-control" id="formPriority" {...priority}/>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="formState">状態</label>
+                    <label htmlFor="formState">State</label>
                     <input type="text" className="form-control" id="formState" {...state}/>
                 </div>
-                <button type="submit" className="btn btn-primary" onClick={handleClick}>登録</button>
+                <button type="submit" className="btn btn-primary" onClick={handleClick}>Register</button>
             </form>
         </>
     )

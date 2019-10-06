@@ -16,11 +16,11 @@ const TodoTable = () => {
             <thead>
                 <tr>
                     <th></th>
-                    <th>名前</th>
-                    <th>内容</th>
-                    <th>締め切り</th>
-                    <th>優先度</th>
-                    <th>状態</th>
+                    <th>Name</th>
+                    <th>Contents</th>
+                    <th>Deadline</th>
+                    <th>Priority</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
