@@ -8,6 +8,7 @@ const BASE_URL='http://localhost:5000/todo'
 const useAddTodo = (dispatch, data, intent) => {
     useEffect(() => {
     const addTodo = async() => {
+        console.log('call addTodo')
         const formatDate = (date) => {
             const y = date.getFullYear()
             const m = date.getMonth() + 1
